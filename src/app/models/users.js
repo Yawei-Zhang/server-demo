@@ -1,7 +1,7 @@
-module.exports = (sequelize, Sequelize) => {
+module.exports = (sequelize, DataTypes) => {
     return sequelize.define("users", {
         userName: {
-            type: Sequelize.STRING
+            type: DataTypes.STRING
         }
     })
-}
+};
