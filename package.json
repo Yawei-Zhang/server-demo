@@ -1,0 +1,32 @@
+{
+  "name": "server_demo",
+  "version": "1.0.0",
+  "description": "My server demo for practising",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "stop": "^C",
+    "test": "jest",
+    "eslint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "server_demo"
+  },
+  "author": "Via",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "express": "^4.16.3",
+    "pg": "^7.5.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.39.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "jest": "^23.6.0"
+  }
+}
