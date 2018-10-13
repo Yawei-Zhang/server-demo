@@ -1,8 +1,10 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-var index_controller = require('../controllers/indexController');
+const { welcome } = require('../controllers/indexController');
+const { helloUser } = require('../controllers/userController');
 
+router.get('/', welcome);
+router.get('/user', helloUser);
 
-router.get('/', index_controller.welcome);
 module.exports = router;
