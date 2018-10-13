@@ -1,13 +1,13 @@
 {
-  "name": "server_demo",
+  "name": "server-demo",
   "version": "1.0.0",
   "description": "My server demo for practising",
-  "main": "src/index.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "start": "node ./src/index.js",
+    "start": "node index.js",
     "stop": "^C",
     "test": "jest",
     "eslint": "eslint"
