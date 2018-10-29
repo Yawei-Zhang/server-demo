@@ -1,3 +1,25 @@
+####Overview
+This is a server demo written by Yawei, just for practising. 
+
+The functions of this server includes:
+
+1. Show "Hello, <user>!" by accessing "localhost:8080/user'
+
+####How to start
+
+1. Download from GitHub.
+2. Run `yarn install` in root path of project.
+3. Run `yarn start` to start the server.
+4. Run `yarn stop` to stop the server.
+
+
+####How to test
+Run `yarn test` to test.
+
+Run `yarn eslint` to format the code.
+
+
+
 #### TODO:
 
 * gitignore可以参考 https://github.com/github/gitignore
