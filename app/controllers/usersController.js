@@ -1,4 +1,4 @@
-const sequelize = require('../../lib/dbConnection').sequelize;
+const sequelize = require('../lib/dbConnection').sequelize;
 const Users = sequelize.import(__dirname + '/../models/users');
 
 exports.helloUser = (_, res) => {

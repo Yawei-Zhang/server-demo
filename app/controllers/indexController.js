@@ -1,4 +1,4 @@
-const sequelize = require('../../lib/dbConnection').sequelize;
+const sequelize = require('../lib/dbConnection').sequelize;
 const Users = sequelize.import(__dirname + '/../models/users');
 
 exports.welcome = (req, res, next) => {
@@ -6,4 +6,3 @@ exports.welcome = (req, res, next) => {
         res.status(200).send(`Hello, ${user.get('userName')}!`);
     });
 }
-

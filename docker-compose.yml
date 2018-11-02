@@ -1,0 +1,31 @@
+version: "3"
+services:
+  app:
+    build: .
+    links:
+    - "db:db.local.env.com"
+    ports:
+    - "8080:8080"
+    volumes:
+    - .:/code
+    depends_on:
+      - db
+
+  db:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: sample
+      POSTGRES_USER: ywzhang
+      POSTGRES_PASSWORD: ywzhang
+
+  migration:
+    build: ../server-demo-migration/
+    links:
+    - "db:db.local.env.com"
+    depends_on:
+      - db
+
+
+
